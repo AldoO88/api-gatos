@@ -15,5 +15,5 @@ test('app shows random fact and image', async ({ page }) => {
 
   console.log(texteContent, imageSrc)
   await expect(texteContent?.length).toBeGreaterThan(0)
-  await expect(imageSrc?.startsWith('hola')).toBeTruthy()
+  await expect(imageSrc?.startsWith(CAT_PREFIX_IMAGE_URL)).toBeTruthy()
 })
